@@ -132,7 +132,7 @@
                     <option value="today">今日</option>
                     <option value="yesterday">昨日</option>
                     <option value="3d">近 3 天</option>
-                    <option value="7d">近 7 天</option>
+                    <option value="7d" selected>近 7 天</option>
                     <option value="14d">近 14 天</option>
                     <option value="31d">近 31 天</option>
                     <option value="custom">自定义</option>
@@ -1266,7 +1266,7 @@
             const valueData = [];
 
             // Context for formatting
-            const range = document.getElementById('timeRange')?.value || '30min';
+            const range = document.getElementById('timeRange')?.value || '7d';
             const interval = document.getElementById('interval')?.value || 'auto';
             const longRanges = ['3d', '7d', '14d', '31d'];
             
